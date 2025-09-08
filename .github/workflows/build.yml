@@ -62,5 +62,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: ${{ matrix.os }}-${{ matrix.features }}
-          path: |
-        target/release/ltengine*
+          path: target/release/ltengine*
