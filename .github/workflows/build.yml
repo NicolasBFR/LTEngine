@@ -18,8 +18,6 @@ jobs:
         include:
           - os: ubuntu-latest
             features: "cuda"
-          - os: ubuntu-latest
-            features: "vulkan"
     steps:
       - name: Checkout code
         uses: actions/checkout@v5
