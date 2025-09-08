@@ -16,12 +16,6 @@ jobs:
           - "vulkan"
           - "metal"
         include:
-          - os: macos-latest
-            features: "metal"
-          - os: windows-latest
-            features: "cuda"
-          - os: windows-latest
-            features: "vulkan"
           - os: ubuntu-latest
             features: "cuda"
           - os: ubuntu-latest
