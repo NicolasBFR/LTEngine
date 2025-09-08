@@ -13,8 +13,6 @@ jobs:
         features:
           - ""
           - "cuda"
-          - "vulkan"
-          - "metal"
         include:
           - os: ubuntu-latest
             features: "cuda"
