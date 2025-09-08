@@ -26,8 +26,7 @@ jobs:
         run: cargo test
 
       - name: Upload Artifact
-        if: startsWith(github.ref, 'refs/tags/')
         uses: actions/upload-artifact@v4
         with:
           name: ubuntu
-          path: .
+          path: target/release/*
