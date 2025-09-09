@@ -14,7 +14,7 @@ jobs:
         run: |
           dnf install -y epel-release
           dnf install -y llamacpp || echo "llamacpp not available in repos"
-          dnf install -y git gcc gcc-c++ make pkg-config openssl-devel llvm-devel clang-devel
+          dnf install -y git gcc gcc-c++ make cmake pkg-config openssl-devel llvm-devel clang-devel
           git --version
       - name: Checkout code
         uses: actions/checkout@v5
