@@ -10,6 +10,10 @@ jobs:
     container:
       image: oraclelinux:9
     steps:
+      - name: Install Git (if needed)
+        run: |
+          dnf install -y git
+          git --version
       - name: Checkout code
         uses: actions/checkout@v5
         with:
