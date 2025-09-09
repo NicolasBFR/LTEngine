@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Install Git (if needed)
         run: |
-          dnf install -y git gcc gcc-c++ make
+          dnf install -y git gcc gcc-c++ make pkg-config openssl-devel
           git --version
       - name: Checkout code
         uses: actions/checkout@v5
